@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	geoblock "github.com/PascalMinder/geoblock"
+	geoblock "github.com/thubolt/geoblock"
 )
 
 const (

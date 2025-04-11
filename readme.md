@@ -25,7 +25,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /docker/config/traefik/traefik.yml:/etc/traefik/traefik.yml
       - /docker/config/traefik/dynamic-configuration.yml:/etc/traefik/dynamic-configuration.yml
-      - /docker/config/traefik/plugin/geoblock:/plugins-local/src/github.com/PascalMinder/geoblock/
+      - /docker/config/traefik/plugin/geoblock:/plugins-local/src/github.com/thubolt/geoblock/
 
     ports:
       - "80:80"
@@ -49,7 +49,7 @@ log:
 experimental:
   localPlugins:
     geoblock:
-      moduleName: github.com/PascalMinder/geoblock
+      moduleName: github.com/thubolt/geoblock
 ````
 
 #### `dynamic-configuration.yml`
@@ -85,7 +85,7 @@ Add the following to your `traefik-config.yml`
 experimental:
   plugins:
     geoblock:
-      moduleName: "github.com/PascalMinder/geoblock"
+      moduleName: "github.com/thubolt/geoblock"
       version: "v0.2.5"
 
 # other stuff you might have in your traefik-config

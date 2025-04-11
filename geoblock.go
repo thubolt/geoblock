@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	lru "github.com/PascalMinder/geoblock/lrucache"
+	lru "github.com/thubolt/geoblock/lrucache"
 )
 
 const (
@@ -456,7 +456,7 @@ func ipInSlice(a net.IP, list []net.IP) bool {
 }
 
 func parseIP(addr string) (net.IP, error) {
-	addrNoWhitespace = strings.TrimSpace(addr)
+	addrNoWhitespace := strings.TrimSpace(addr)
 	ipAddress := net.ParseIP(addrNoWhitespace)
 
 	if ipAddress == nil {
