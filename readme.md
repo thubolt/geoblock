@@ -10,7 +10,7 @@ It is possible to install the [plugin locally](https://traefik.io/blog/using-pri
 
 Depending on your setup, the installation steps might differ from the one described here. This example assumes that your Traefik instance runs in a Docker container and uses the [official image](https://hub.docker.com/_/traefik/).
 
-Download the latest release of the plugin and save it to a location the Traefik container can reach. Below is an example of a possible setup. Notice how the plugin source is mapped into the container (`/plugin/geoblock:/plugins-local/src/github.com/PascalMinder/geoblock/`) via a volume bind mount:
+Download the latest release of the plugin and save it to a location the Traefik container can reach. Below is an example of a possible setup. Notice how the plugin source is mapped into the container (`/plugin/geoblock:/plugins-local/src/github.com/thubolt/geoblock/`) via a volume bind mount:
 
 #### `docker-compose.yml`
 
